@@ -41,7 +41,7 @@ class Model_DBlog_Log extends ORM
 		return $val;
 	}
 
-	public function save()
+	public function save(Validation $validation = NULL)
 	{
 		$this->tstamp = time();
 		return parent::save();
