@@ -5,7 +5,7 @@
  * @package    dblog
  * @author     Bastian Bräu
  */
-class DBlog_Writer extends Kohana_Log_Writer
+class DBlog_Writer extends Log_Writer
 {
 
 	/**
