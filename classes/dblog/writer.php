@@ -16,7 +16,7 @@ class DBlog_Writer extends Log_Writer
 	{
 		foreach ($messages as & $message)
 		{
-			DBlog::add_kohana_message($message['type'], $message['body']);
+			DBlog::add_kohana_message($message['level'], $message['body']);
 		}
 	}
 
