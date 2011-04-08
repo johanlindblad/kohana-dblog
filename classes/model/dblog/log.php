@@ -32,17 +32,6 @@ class Model_DBlog_Log extends ORM
 		return $val;
 	}
 
-	public function as_array()
-	{
-		$object = array();
-		foreach ($this->_object as $key => $val)
-		{
-			$object[$this->label($key)] = $this->__get($key);
-		}
-		// omitted $this->_related processing from super class
-		return $object;
-	}
-
 	/**
 	 * Get table name from config
 	 *
