@@ -39,7 +39,7 @@ class Model_DBlog_Log extends ORM
 	 */
 	protected function _initialize()
 	{
-		$this->_table_name = Kohana::config('dblog.table');
+		$this->_table_name = Kohana::$config->load('dblog.table');
 		parent::_initialize();
 	}
 

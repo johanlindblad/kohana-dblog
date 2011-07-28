@@ -44,7 +44,7 @@ abstract class DBlog_Core
 	public static function add_kohana_message($type, $message)
 	{
 		$details = '';
-		if (Kohana::config('dblog.split') === TRUE)
+		if (Kohana::$config->load('dblog.split') === TRUE)
 		{
 			$colon_pos = strpos($message, ':');
 			if ( (int) $colon_pos > 0)
